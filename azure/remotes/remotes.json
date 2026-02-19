@@ -1,0 +1,19 @@
+{
+  "rem1": {
+    "rg": "rg-fst-rem1",
+    "location": "uksouth",
+    "vnetAddressSpaces": ["10.140.0.0/16"],
+    "subnets": {
+      "lanCidr": "10.140.0.0/24"
+    }
+  },
+
+  "rem2": {
+    "rg": "rg-fst-rem2",
+    "location": "uksouth",
+    "vnetAddressSpaces": ["10.141.0.0/16"],
+    "subnets": {
+      "lanCidr": "10.141.0.0/24"
+    }
+  }
+}
