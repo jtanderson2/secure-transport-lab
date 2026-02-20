@@ -60,20 +60,20 @@ az network nic create \
   --resource-group "$RG" --name "$NIC_LAN" --location "$LOC" \
   --vnet-name "$VNET" --subnet "$SNET_LAN" \
   --private-ip-address "$IP_LAN" \
-  --ip-forwarding true --accelerated-networking true
+  --ip-forwarding true
 
 az network nic create \
   --resource-group "$RG" --name "$NIC_WAN1" --location "$LOC" \
   --vnet-name "$VNET" --subnet "$SNET_WAN1" \
   --private-ip-address "$IP_WAN1" \
   --public-ip-address "$PIP_WAN1" \
-  --ip-forwarding true --accelerated-networking true
+  --ip-forwarding true
 
 az network nic create \
   --resource-group "$RG" --name "$NIC_WAN2" --location "$LOC" \
   --vnet-name "$VNET" --subnet "$SNET_WAN2" \
   --private-ip-address "$IP_WAN2" \
   --public-ip-address "$PIP_WAN2" \
-  --ip-forwarding true --accelerated-networking true
+  --ip-forwarding true
 
 echo "Done: SPOKE $SITE"
