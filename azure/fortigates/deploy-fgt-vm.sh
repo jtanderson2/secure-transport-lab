@@ -42,7 +42,8 @@ az vm create \
   --nics "$NIC_WAN1_ID" "$NIC_WAN2_ID" "$NIC_LAN_ID" \
   --os-disk-size-gb "$DISK_SIZE" \
   --storage-sku "$DISK_SKU" \
-  --admin-username azureuser \
+  --admin-username fstadmin \
+  --security-type Standard
   --generate-ssh-keys \
   --plan-publisher "$PLAN_PUBLISHER" \
   --plan-product "$PLAN_PRODUCT" \
