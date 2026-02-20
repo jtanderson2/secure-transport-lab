@@ -2,7 +2,7 @@
   "vm-fst-hub1-fgt1": {
     "rg": "rg-fst-hub1",
     "location": "uksouth",
-    "vmSize": "Standard_D2s_v3",
+    "vmSize": "Standard_B2s",
     "imageUrn": "fortinet:fortinet_fortigate-vm_v5:fortinet_fg-vm_g2:7.6.5",
     "osDisk": { "sku": "StandardSSD_LRS", "sizeGb": 32 },
     "nics": {
@@ -15,7 +15,7 @@
   "vm-fst-spk1-fgt1": {
     "rg": "rg-fst-spk1",
     "location": "uksouth",
-    "vmSize": "Standard_D2s_v3",
+    "vmSize": "Standard_B2s",
     "imageUrn": "fortinet:fortinet_fortigate-vm_v5:fortinet_fg-vm_g2:7.6.5",
     "osDisk": { "sku": "StandardSSD_LRS", "sizeGb": 32 },
     "nics": {
@@ -28,7 +28,7 @@
   "vm-fst-spk2-fgt1": {
     "rg": "rg-fst-spk2",
     "location": "uksouth",
-    "vmSize": "Standard_D2s_v3",
+    "vmSize": "Standard_B2s",
     "imageUrn": "fortinet:fortinet_fortigate-vm_v5:fortinet_fg-vm_g2:7.6.5",
     "osDisk": { "sku": "StandardSSD_LRS", "sizeGb": 32 },
     "nics": {
