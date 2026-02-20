@@ -44,12 +44,12 @@ az vm create \
   --storage-sku "$DISK_SKU" \
   --admin-username fstadmin \
   --admin-password 'F@rT15eCuR3!' \
-  --generate-ssh-keys \
   --plan-publisher "$PLAN_PUBLISHER" \
   --plan-product "$PLAN_PRODUCT" \
   --plan-name "$PLAN_NAME" \
+  --boot-diagnostics-storage "" \
   --security-type TrustedLaunch \
   --enable-secure-boot false \
-  --enable-vtpm false \
+  --enable-vtpm false
 
 echo "Done: $VM_NAME"
