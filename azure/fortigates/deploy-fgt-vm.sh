@@ -43,10 +43,12 @@ az vm create \
   --os-disk-size-gb "$DISK_SIZE" \
   --storage-sku "$DISK_SKU" \
   --admin-username fstadmin \
-  --security-type Standard
   --generate-ssh-keys \
   --plan-publisher "$PLAN_PUBLISHER" \
   --plan-product "$PLAN_PRODUCT" \
   --plan-name "$PLAN_NAME"
+  --security-type TrustedLaunch \
+  --enable-secure-boot false \
+  --enable-vtpm false \
 
 echo "Done: $VM_NAME"
