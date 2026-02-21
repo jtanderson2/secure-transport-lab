@@ -2,15 +2,12 @@
   "spk1": {
     "rg": "rg-fst-spk1",
     "location": "uksouth",
-
     "vnetAddressSpaces": ["10.130.0.0/16", "172.31.2.0/24"],
-
     "subnets": {
       "lanCidr": "10.130.0.0/24",
       "wan1Cidr": "172.31.2.0/28",
       "wan2Cidr": "172.31.2.16/28"
     },
-
     "fortigateIps": {
       "lan": "10.130.0.4",
       "wan1": "172.31.2.4",
@@ -21,19 +18,35 @@
   "spk2": {
     "rg": "rg-fst-spk2",
     "location": "uksouth",
-
     "vnetAddressSpaces": ["10.131.0.0/16", "172.31.3.0/24"],
-
     "subnets": {
       "lanCidr": "10.131.0.0/24",
       "wan1Cidr": "172.31.3.0/28",
       "wan2Cidr": "172.31.3.16/28"
     },
-
     "fortigateIps": {
       "lan": "10.131.0.4",
       "wan1": "172.31.3.4",
       "wan2": "172.31.3.20"
+    }
+  },
+
+  "spk3": {
+    "rg": "rg-fst-spk3",
+    "location": "uksouth",
+
+    "vnetAddressSpaces": ["10.132.0.0/16", "172.31.4.0/24"],
+
+    "subnets": {
+      "lanCidr": "10.132.0.0/24",
+      "wan1Cidr": "172.31.4.0/28",
+      "wan2Cidr": "172.31.4.16/28"
+    },
+
+    "fortigateIps": {
+      "lan": "10.132.0.4",
+      "wan1": "172.31.4.4",
+      "wan2": "172.31.4.20"
     }
   }
 }
