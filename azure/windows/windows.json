@@ -1,4 +1,22 @@
 {
+  "vm-fst-hub1-ads1": {
+    "rg": "rg-fst-hub1",
+    "location": "uksouth",
+    "hostname": "hub1-ads1",
+    "vmSize": "Standard_B2s",
+    "imageUrn": "MicrosoftWindowsServer:WindowsServer:2022-datacenter:latest",
+    "osDisk": {
+      "sku": "StandardSSD_LRS",
+      "sizeGb": 128
+    },
+    "nic": {
+      "name": "nic-fst-hub1-ads1-lan",
+      "vnet": "vnet-fst-hub1",
+      "subnet": "snet-fst-hub1-lan",
+      "privateIp": "10.128.0.14"
+    }
+  },
+
   "vm-fst-spk1-win1": {
     "rg": "rg-fst-spk1",
     "location": "uksouth",
