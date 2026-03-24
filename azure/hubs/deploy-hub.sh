@@ -16,6 +16,7 @@ RT_LAN="rt-fst-${SITE}-lan"
 
 PIP_WAN1="pip-fst-${SITE}-fgt1-wan1"
 PIP_WAN2="pip-fst-${SITE}-fgt1-wan2"
+PIP_BASTION="pip-fst-${SITE}-bst"
 
 NSG_WAN1="nsg-fst-${SITE}-wan1"
 NSG_WAN2="nsg-fst-${SITE}-wan2"
@@ -162,6 +163,13 @@ az network public-ip create \
 az network public-ip create \
   --resource-group "$RG" \
   --name "$PIP_WAN2" \
+  --location "$LOC" \
+  --sku Standard \
+  --allocation-method Static
+
+az network public-ip create \
+  --resource-group "$RG" \
+  --name "$PIP_BASTION" \
   --location "$LOC" \
   --sku Standard \
   --allocation-method Static
