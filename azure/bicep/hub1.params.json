@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "rgName": { "value": "rg-fst-hub1" },
+    "location": { "value": "uksouth" },
+    "siteName": { "value": "hub1" },
+    "addressSpace": {
+      "value": [
+        "10.128.0.0/16",
+        "172.31.0.0/24"
+      ]
+    },
+    "lanSubnetPrefix": { "value": "10.128.0.0/24" },
+    "wan1SubnetPrefix": { "value": "172.31.0.0/28" },
+    "wan2SubnetPrefix": { "value": "172.31.0.16/28" },
+    "bastionSubnetPrefix": { "value": "10.128.255.0/24" },
+    "lanNextHopIp": { "value": "10.128.0.4" },
+    "nics": {
+      "value": {
+        "lan": {
+          "name": "nic-fst-hub1-lan",
+          "privateIp": "10.128.0.4"
+        },
+        "wan1": {
+          "name": "nic-fst-hub1-wan1",
+          "privateIp": "172.31.0.4"
+        },
+        "wan2": {
+          "name": "nic-fst-hub1-wan2",
+          "privateIp": "172.31.0.20"
+        }
+      }
+    },
+    "tags": {
+      "value": {
+        "persona": "hub"
+      }
+    }
+  }
+}
