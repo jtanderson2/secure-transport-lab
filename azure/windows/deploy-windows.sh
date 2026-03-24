@@ -34,7 +34,6 @@ az network nic create \
   --vnet-name "$VNET_NAME" \
   --subnet "$SNET_NAME" \
   --private-ip-address "$NIC_IP" \
-  --accelerated-networking true
 
 # Create VM
 az vm create \
