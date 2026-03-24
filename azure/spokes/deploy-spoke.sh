@@ -11,6 +11,8 @@ SNET_LAN="snet-fst-${SITE}-lan"
 SNET_WAN1="snet-fst-${SITE}-wan1"
 SNET_WAN2="snet-fst-${SITE}-wan2"
 
+RT_LAN="rt-fst-${SITE}-lan"
+
 PIP_WAN1="pip-fst-${SITE}-fgt1-wan1"
 PIP_WAN2="pip-fst-${SITE}-fgt1-wan2"
 
@@ -65,6 +67,29 @@ az network vnet subnet create \
   --name "$SNET_WAN2" \
   --address-prefixes "$WAN2_CIDR"
 
+# ===============================
+# Route Table (LAN) + Default Route
+# ===============================
+
+az network route-table create \
+  --resource-group "$RG" \
+  --name "$RT_LAN" \
+  --location "$LOC"
+
+az network route-table route create \
+  --resource-group "$RG" \
+  --route-table-name "$RT_LAN" \
+  --name "default-to-fgt" \
+  --address-prefix "0.0.0.0/0" \
+  --next-hop-type VirtualAppliance \
+  --next-hop-ip-address "$IP_LAN"
+
+az network vnet subnet update \
+  --resource-group "$RG" \
+  --vnet-name "$VNET" \
+  --name "$SNET_LAN" \
+  --route-table "$RT_LAN"
+  
 # ===============================
 # NSGs for WAN subnets
 # ===============================
