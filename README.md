@@ -60,7 +60,7 @@ See each folder for component-specific instructions.
 
 - FortiGates: accessible via public IP
 - Windows VMs: access via Azure Bastion (Developer SKU)
-- Management (FMG/FAZ/FAC): access via hub Bastion or Windows VM
+- Management (FMG/FAZ/FAC): access on private IPs via Hub1 Bastion and Windows VM
 - Additional access options available once SD-WAN overlay is configured
 
 VM Credentials
