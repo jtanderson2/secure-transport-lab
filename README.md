@@ -60,3 +60,17 @@ VM Credentials
 
 - Username: `fstadmin`
 - Password: `F@rT15eCuR3!` *(change after first login)*
+
+## Destroy
+
+Run from Azure Cloud Shell (Bash):
+
+```bash
+# assumes repo is cloned into azcli session, see above
+
+# change to Azure deployment directory
+cd secure-transport-lab/azure
+
+# destroy full lab
+./destroy-all.sh
+```
