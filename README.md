@@ -42,7 +42,7 @@ This deploys in order:
 
 ## Modular Deployment
 
-Components can be deployed individually from their folders:
+Components can be deployed individually from their respective folders:
 
 - `hubs`, `spokes`, `remotes`
 - `fortigates`
