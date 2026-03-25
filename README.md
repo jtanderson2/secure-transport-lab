@@ -34,9 +34,10 @@ This deploys in order:
 - Windows VMs
 - Management (FortiManager, FortiAnalyzer, FortiAuthenticator)
 
-All deployments are Azure CLI-driven using JSON configuration files.
-
-No OS configuration or Fortinet licensing is applied. BYOL is assumed.
+### Notes
+- All deployments are Azure CLI-driven using JSON configuration files.
+- No Fortinet licensing is applied. BYOL is assumed.
+- No OS configuration is applied. This is 'bare bones' deployment ready for the management and overlay to be built
 
 ## Modular Deployment
 
