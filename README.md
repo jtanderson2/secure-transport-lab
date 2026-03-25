@@ -4,6 +4,10 @@ This repository contains a modular Azure lab that emulates a Fortinet SD-WAN env
 
 Azure is used to replicate SD-WAN underlay. All connectivity is via overlay (no VNet peering).
 
+# Diagram
+
+![](images/fst-lab-diag.png)
+
 ## Deployment
 
 Run from Azure Cloud Shell (Bash):
