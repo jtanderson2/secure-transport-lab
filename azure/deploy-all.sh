@@ -1,63 +1,63 @@
 #!/bin/bash
 set -e
 
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 echo "========================================"
 echo "Secure Transport Lab - Full Deployment"
 echo "========================================"
 
-BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
-
-# -------------------------------
-# Networks
-# -------------------------------
-
 echo "Deploying hub network..."
-bash "$BASE_DIR/hubs/deploy-hub.sh" hub1
+cd "$BASE_DIR/hubs"
+bash ./deploy-hub.sh hub1
+cd "$BASE_DIR"
 
 echo "Deploying spoke networks..."
+cd "$BASE_DIR/spokes"
 for site in spk1 spk2 spk3
 do
-  bash "$BASE_DIR/spokes/deploy-spoke.sh" "$site"
+  bash ./deploy-spoke.sh "$site"
 done
+cd "$BASE_DIR"
 
 echo "Deploying remote networks..."
+cd "$BASE_DIR/remotes"
 for site in rem1
 do
-  bash "$BASE_DIR/remotes/deploy-remote.sh" "$site"
+  bash ./deploy-remote.sh "$site"
 done
-
-# -------------------------------
-# FortiGate VMs
-# -------------------------------
+cd "$BASE_DIR"
 
 echo "Deploying FortiGate VMs..."
+cd "$BASE_DIR/fortigates"
 for vm in vm-fst-hub1-fgt1 vm-fst-spk1-fgt1 vm-fst-spk2-fgt1 vm-fst-spk3-fgt1
 do
-  bash "$BASE_DIR/fortigates/deploy-fgt.sh" "$vm"
+  bash ./deploy-fgt.sh "$vm"
 done
-
-# -------------------------------
-# Windows VMs
-# -------------------------------
+cd "$BASE_DIR"
 
 echo "Deploying Windows VMs..."
+cd "$BASE_DIR/windows"
 for vm in vm-fst-hub1-ads1 vm-fst-spk1-win1 vm-fst-spk2-win1 vm-fst-rem1-win1 vm-fst-rem1-win2
 do
-  bash "$BASE_DIR/windows/deploy-windows.sh" "$vm"
+  bash ./deploy-windows.sh "$vm"
 done
-
-# -------------------------------
-# Fortinet Management
-# -------------------------------
+cd "$BASE_DIR"
 
 echo "Deploying FortiManager..."
-bash "$BASE_DIR/fortimanager/deploy-fmg.sh" vm-fst-hub1-fmg1
+cd "$BASE_DIR/fortimanager"
+bash ./deploy-fmg.sh vm-fst-hub1-fmg1
+cd "$BASE_DIR"
 
 echo "Deploying FortiAnalyzer..."
-bash "$BASE_DIR/fortianalyzer/deploy-faz.sh" vm-fst-hub1-faz1
+cd "$BASE_DIR/fortianalyzer"
+bash ./deploy-faz.sh vm-fst-hub1-faz1
+cd "$BASE_DIR"
 
 echo "Deploying FortiAuthenticator..."
-bash "$BASE_DIR/fortiauthenticator/deploy-fac.sh" vm-fst-hub1-fac1
+cd "$BASE_DIR/fortiauthenticator"
+bash ./deploy-fac.sh vm-fst-hub1-fac1
+cd "$BASE_DIR"
 
 echo "========================================"
 echo "Full deployment complete"
