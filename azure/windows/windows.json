@@ -53,6 +53,24 @@
     }
   },
 
+  "vm-fst-spk3-win1": {
+    "rg": "rg-fst-spk3",
+    "location": "uksouth",
+    "hostname": "spk3-win1",
+    "vmSize": "Standard_B2s",
+    "imageUrn": "MicrosoftWindowsServer:WindowsServer:2022-datacenter:latest",
+    "osDisk": {
+      "sku": "StandardSSD_LRS",
+      "sizeGb": 128
+    },
+    "nic": {
+      "name": "nic-fst-spk3-win1-lan",
+      "vnet": "vnet-fst-spk3",
+      "subnet": "snet-fst-spk3-lan",
+      "privateIp": "10.133.0.10"
+    }
+  },
+
   "vm-fst-rem1-win1": {
     "rg": "rg-fst-rem1",
     "location": "uksouth",
