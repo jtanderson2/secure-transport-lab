@@ -43,7 +43,7 @@ This deploys in order:
 ### Notes
 - All deployments are Azure CLI-driven using JSON configuration files.
 - No Fortinet licensing is applied. BYOL is assumed.
-- No OS configuration is applied. This is 'bare bones' deployment ready for the management and overlay to be built.
+- No OS configuration is applied. This is 'bare bones' deployment ready for management and overlay to be built.
 - Hub2 is parked for future use. Azure networking components are deployed, but no compute.
 - Remote site is for remote user testing.
 
