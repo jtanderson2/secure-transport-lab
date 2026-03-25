@@ -55,8 +55,5 @@ az vm create \
   --plan-product "$PLAN_PRODUCT" \
   --plan-name "$PLAN_NAME" \
   --boot-diagnostics-storage "" \
-  --security-type TrustedLaunch \
-  --enable-secure-boot false \
-  --enable-vtpm false
 
 echo "Done: $VM_NAME"
