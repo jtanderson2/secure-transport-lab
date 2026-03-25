@@ -3,7 +3,7 @@
     "rg": "rg-fst-hub1",
     "location": "uksouth",
     "hostname": "hub1-fac1",
-    "vmSize": "Standard_D2s_v3",
+    "vmSize": "Standard_B2s",
     "imageUrn": "fortinet:fortinet-fortiauthenticator-vm:fortinet-fac-vm:6.6.7",
     "osDisk": {
       "sku": "StandardSSD_LRS",
