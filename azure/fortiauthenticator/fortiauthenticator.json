@@ -13,7 +13,7 @@
       "name": "nic-fst-hub1-fac1-lan",
       "vnet": "vnet-fst-hub1",
       "subnet": "snet-fst-hub1-lan",
-      "privateIp": "10.128.0.12"
+      "privateIp": "10.129.0.12"
     }
   }
 }
