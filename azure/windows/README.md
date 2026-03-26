@@ -40,7 +40,7 @@ chmod +x *.sh
 This deploys in order:
 
 - NIC
-- FortiGate VM
+- Windows VM
 
 ## Destroy
 

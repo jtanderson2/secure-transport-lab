@@ -13,7 +13,7 @@ rm -rf secure-transport-lab
 # clone latest repo
 git clone https://github.com/jtanderson2/secure-transport-lab.git
 
-# change to fortimanager deployment directory
+# change to fortianalyzer deployment directory
 cd secure-transport-lab/azure/fortianalyzer
 
 # make scripts executable

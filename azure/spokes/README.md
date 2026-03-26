@@ -36,7 +36,7 @@ This deploys in order:
 - Route Tables
 - WAN NSGs (any-any)
 - Public IPS
-- NICs For Hub FortiGates
+- NICs For Spoke FortiGates
 
 ## Destroy
 
