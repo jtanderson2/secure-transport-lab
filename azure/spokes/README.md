@@ -24,6 +24,9 @@ chmod +x *.sh
 
 # deploy spk2
 ./deploy-spoke.sh spk2
+
+# deploy spk3
+./deploy-spoke.sh spk3
 ```
 This deploys in order:
 
@@ -45,5 +48,8 @@ az group delete -n rg-fst-spk1 --yes --no-wait
 
 # destroy spk2
 az group delete -n rg-fst-spk2 --yes --no-wait
+
+# destroy spk3
+az group delete -n rg-fst-spk3 --yes --no-wait
 ```
 
