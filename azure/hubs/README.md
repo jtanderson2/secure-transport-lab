@@ -1,6 +1,6 @@
 # Hub Deployment
 
-Deploys the Azure Networking components for the SD-WAN Hub sites
+Deploys the Azure Networking components for the SD-WAN Hub sites.
 
 ## Deploy
 
