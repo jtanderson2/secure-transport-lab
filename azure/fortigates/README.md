@@ -1,4 +1,4 @@
-# FortiGates Deployment
+# FortiGate Deployment
 
 Deploys FortiGates into Hub and Spokes. Ensure respective Azure Networking components are deployed first.
 
