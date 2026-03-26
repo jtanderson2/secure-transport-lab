@@ -1,6 +1,6 @@
 # Spoke Deployment
 
-Deploys the Azure Networking components for the SD-WAN Spoke sites
+Deploys the Azure Networking components for the SD-WAN Spoke sites.
 
 ## Deploy
 
