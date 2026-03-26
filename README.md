@@ -95,7 +95,7 @@ az vm start -g rg-fst-spk3 -n vm-fst-spk3-win1
 az vm start -g rg-fst-rem1 -n vm-fst-rem1-win1
 az vm start -g rg-fst-rem1 -n vm-fst-rem1-win2
 
-# ---
+---
 
 # shutdown hub vms
 az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fgt1
