@@ -17,7 +17,7 @@ git clone https://github.com/jtanderson2/secure-transport-lab.git
 cd secure-transport-lab/azure/hubs
 
 # make scripts executable
-chmod +x *.sh */*.sh
+chmod +x *.sh
 
 # deploy hub1
 ./deploy-hub.sh hub1
