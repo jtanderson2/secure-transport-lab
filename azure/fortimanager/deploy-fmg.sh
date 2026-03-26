@@ -2,6 +2,7 @@
 set -e
 
 VM_NAME=$1
+[[ -z "$VM_NAME" ]] && { echo "Usage: $0 <vm-name>"; exit 1; }
 DATA_FILE=./fortimanager.json
 
 RG=$(jq -r ".\"$VM_NAME\".rg" $DATA_FILE)
@@ -54,6 +55,6 @@ az vm create \
   --plan-publisher "$PLAN_PUBLISHER" \
   --plan-product "$PLAN_PRODUCT" \
   --plan-name "$PLAN_NAME" \
-  --boot-diagnostics-storage "" \
+  --boot-diagnostics-storage ""
 
 echo "Done: $VM_NAME"

@@ -3,6 +3,7 @@
 set -e
 
 VM_NAME=$1
+[[ -z "$VM_NAME" ]] && { echo "Usage: $0 <vm-name>"; exit 1; }
 DATA_FILE=./fortigates.json
 
 RG=$(jq -r ".\"$VM_NAME\".rg" $DATA_FILE)

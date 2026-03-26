@@ -2,6 +2,7 @@
 set -e
 
 VM_NAME=$1
+[[ -z "$VM_NAME" ]] && { echo "Usage: $0 <vm-name>"; exit 1; }
 DATA_FILE=./windows.json
 
 RG=$(jq -r ".\"$VM_NAME\".rg" $DATA_FILE)
@@ -33,7 +34,7 @@ az network nic create \
   --location "$LOC" \
   --vnet-name "$VNET_NAME" \
   --subnet "$SNET_NAME" \
-  --private-ip-address "$NIC_IP" \
+  --private-ip-address "$NIC_IP"
 
 # Create VM
 az vm create \

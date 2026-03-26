@@ -2,6 +2,7 @@
 set -e
 
 SITE=$1
+[[ -z "$SITE" ]] && { echo "Usage: $0 <hub-name>"; exit 1; }
 DATA_FILE=./hubs.json
 
 # ----- Derived names -----
