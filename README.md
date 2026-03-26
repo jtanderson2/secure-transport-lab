@@ -75,48 +75,48 @@ VM Credentials
 
 ```
 # startup hub vms
-az vm start -g rg-fst-hub1 -n vm-fst-hub1-fgt1
-az vm start -g rg-fst-hub1 -n vm-fst-hub1-ads1
-az vm start -g rg-fst-hub1 -n vm-fst-hub1-fmg1
-az vm start -g rg-fst-hub1 -n vm-fst-hub1-faz1
-az vm start -g rg-fst-hub1 -n vm-fst-hub1-fac1
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-fgt1 --no-wait
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-ads1 --no-wait
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-fmg1 --no-wait
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-faz1 --no-wait
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-fac1 --no-wait
 
 # startup spoke vms
-az vm start -g rg-fst-spk1 -n vm-fst-spk1-fgt1
-az vm start -g rg-fst-spk1 -n vm-fst-spk1-win1
+az vm start -g rg-fst-spk1 -n vm-fst-spk1-fgt1 --no-wait
+az vm start -g rg-fst-spk1 -n vm-fst-spk1-win1 --no-wait
 
-az vm start -g rg-fst-spk2 -n vm-fst-spk2-fgt1
-az vm start -g rg-fst-spk2 -n vm-fst-spk2-win1
+az vm start -g rg-fst-spk2 -n vm-fst-spk2-fgt1 --no-wait
+az vm start -g rg-fst-spk2 -n vm-fst-spk2-win1 --no-wait
 
-az vm start -g rg-fst-spk3 -n vm-fst-spk3-fgt1
-az vm start -g rg-fst-spk3 -n vm-fst-spk3-win1
+az vm start -g rg-fst-spk3 -n vm-fst-spk3-fgt1 --no-wait
+az vm start -g rg-fst-spk3 -n vm-fst-spk3-win1 --no-wait
 
 # startup remote vms
-az vm start -g rg-fst-rem1 -n vm-fst-rem1-win1
-az vm start -g rg-fst-rem1 -n vm-fst-rem1-win2
+az vm start -g rg-fst-rem1 -n vm-fst-rem1-win1 --no-wait
+az vm start -g rg-fst-rem1 -n vm-fst-rem1-win2 --no-wait
 
 ---
 
 # shutdown hub vms
-az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fgt1
-az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-ads1
-az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fmg1
-az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-faz1
-az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fac1
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fgt1 --no-wait
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-ads1 --no-wait
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fmg1 --no-wait
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-faz1 --no-wait
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fac1 --no-wait
 
 # shutdown spoke vms
-az vm deallocate -g rg-fst-spk1 -n vm-fst-spk1-fgt1
-az vm deallocate -g rg-fst-spk1 -n vm-fst-spk1-win1
+az vm deallocate -g rg-fst-spk1 -n vm-fst-spk1-fgt1 --no-wait
+az vm deallocate -g rg-fst-spk1 -n vm-fst-spk1-win1 --no-wait
 
-az vm deallocate -g rg-fst-spk2 -n vm-fst-spk2-fgt1
-az vm deallocate -g rg-fst-spk2 -n vm-fst-spk2-win1
+az vm deallocate -g rg-fst-spk2 -n vm-fst-spk2-fgt1 --no-wait
+az vm deallocate -g rg-fst-spk2 -n vm-fst-spk2-win1 --no-wait
 
-az vm deallocate -g rg-fst-spk3 -n vm-fst-spk3-fgt1
-az vm deallocate -g rg-fst-spk3 -n vm-fst-spk3-win1
+az vm deallocate -g rg-fst-spk3 -n vm-fst-spk3-fgt1 --no-wait
+az vm deallocate -g rg-fst-spk3 -n vm-fst-spk3-win1 --no-wait
 
 # shutdown remote vms
-az vm deallocate -g rg-fst-rem1 -n vm-fst-rem1-win1
-az vm deallocate -g rg-fst-rem1 -n vm-fst-rem1-win2
+az vm deallocate -g rg-fst-rem1 -n vm-fst-rem1-win1 --no-wait
+az vm deallocate -g rg-fst-rem1 -n vm-fst-rem1-win2 --no-wait
 ```
 
 ## Destroy
