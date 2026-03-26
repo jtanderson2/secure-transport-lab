@@ -71,6 +71,54 @@ VM Credentials
 - Username: `fstadmin`
 - Password: `F@rT15eCuR3!` *(change after first login)*
 
+## Startup and Shutdown Scripts
+
+```
+# startup hub vms
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-fgt1
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-ads1
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-fmg1
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-faz1
+az vm start -g rg-fst-hub1 -n vm-fst-hub1-fac1
+
+# startup spoke vms
+az vm start -g rg-fst-spk1 -n vm-fst-spk1-fgt1
+az vm start -g rg-fst-spk1 -n vm-fst-spk1-win1
+
+az vm start -g rg-fst-spk2 -n vm-fst-spk2-fgt1
+az vm start -g rg-fst-spk2 -n vm-fst-spk2-win1
+
+az vm start -g rg-fst-spk3 -n vm-fst-spk3-fgt1
+az vm start -g rg-fst-spk3 -n vm-fst-spk3-win1
+
+# startup remote vms
+az vm start -g rg-fst-rem1 -n vm-fst-rem1-win1
+az vm start -g rg-fst-rem1 -n vm-fst-rem1-win2
+
+# ---
+
+# shutdown hub vms
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fgt1
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-ads1
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fmg1
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-faz1
+az vm deallocate -g rg-fst-hub1 -n vm-fst-hub1-fac1
+
+# shutdown spoke vms
+az vm deallocate -g rg-fst-spk1 -n vm-fst-spk1-fgt1
+az vm deallocate -g rg-fst-spk1 -n vm-fst-spk1-win1
+
+az vm deallocate -g rg-fst-spk2 -n vm-fst-spk2-fgt1
+az vm deallocate -g rg-fst-spk2 -n vm-fst-spk2-win1
+
+az vm deallocate -g rg-fst-spk3 -n vm-fst-spk3-fgt1
+az vm deallocate -g rg-fst-spk3 -n vm-fst-spk3-win1
+
+# shutdown remote vms
+az vm deallocate -g rg-fst-rem1 -n vm-fst-rem1-win1
+az vm deallocate -g rg-fst-rem1 -n vm-fst-rem1-win2
+```
+
 ## Destroy
 
 Run from Azure Cloud Shell (Bash):
