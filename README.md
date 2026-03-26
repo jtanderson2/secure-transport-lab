@@ -46,7 +46,7 @@ This deploys in order:
 - No OS configuration is applied. This is 'bare bones' deployment ready for management and overlay to be built.
 - Hub2 is parked for future use. Azure networking components are deployed, but no compute.
 - Remote site is for remote user testing.
-- NICs for FortiGates are configure in hub and psoke scripts. NICs for other compute configured in respective VM scripts.
+- NICs (and respective PIPs) for FortiGates are configured in hub and spoke scripts. NICs for other compute configured in respective VM scripts.
 
 ## Modular Deployment
 
