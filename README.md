@@ -1,4 +1,4 @@
-# Secure Transport Lab – Azure Deployment
+# Fortinet SD-WAN Lab – Azure Deployment
 
 This repository contains a modular Azure lab that emulates a Fortinet SD-WAN environment across hub, spoke, and remote sites, with supporting services and workloads.
 
