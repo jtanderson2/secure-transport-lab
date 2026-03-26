@@ -8,7 +8,7 @@ Azure is used to replicate SD-WAN underlay. All connectivity is via overlay (no 
 
 Diagram shows components deployed and intended use-cases:
 
-![](images/fst-lab-diag.png)
+![](images/fst-lab-diag1.png)
 
 ## Deployment
 
