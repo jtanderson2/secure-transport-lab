@@ -4,7 +4,7 @@
     "location": "uksouth",
     "hostname": "hub1-fmg1",
     "vmSize": "Standard_D4_v3",
-    "imageUrn": "fortinet:fortinet-fortimanager:fortinet-fortimanager:7.6.5",
+    "imageUrn": "fortinet:fortinet-fortimanager:fortinet-fortimanager:7.6.6",
     "osDisk": {
       "sku": "StandardSSD_LRS",
       "sizeGb": 512
