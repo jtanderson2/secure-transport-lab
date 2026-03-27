@@ -2,6 +2,7 @@
 set -e
 
 SITE=$1
+[[ -z "$SITE" ]] && { echo "Usage: $0 <remote-name>"; exit 1; }
 DATA_FILE=./remotes.json
 
 # ----- Derived names (standard naming convention) -----

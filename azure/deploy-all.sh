@@ -38,7 +38,7 @@ cd "$BASE_DIR"
 
 echo "Deploying Windows VMs..."
 cd "$BASE_DIR/windows"
-for vm in vm-fst-hub1-ads1 vm-fst-spk1-win1 vm-fst-spk2-win1 vm-fst-rem1-win1 vm-fst-rem1-win2
+for vm in vm-fst-hub1-ads1 vm-fst-spk1-win1 vm-fst-spk2-win1 vm-fst-spk3-win1 vm-fst-rem1-win1 vm-fst-rem1-win2
 do
   bash ./deploy-windows.sh "$vm"
 done

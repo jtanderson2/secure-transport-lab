@@ -34,7 +34,7 @@ chmod +x *.sh
 ```
 This deploys in order:
 
-- FortiGate VM (NICs are created in hub/spoke networking scipts)
+- FortiGate VM (NICs are created in hub/spoke networking scripts)
 
 ## Destroy
 
