@@ -66,7 +66,7 @@ See each folder for component-specific instructions.
 - Management (FMG/FAZ/FAC): access on private IPs via Hub1 Bastion and Windows VM
 - Additional access options available once FortiGates and SD-WAN overlay are configured
 
-VM Credentials
+VM Credentials:
 
 - Username: `fstadmin`
 - Password: `F@rT15eCuR3!` *(change after first login)*
